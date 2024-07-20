@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "deploy":"gh-pages -d .next/static",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -10,6 +11,7 @@
   },
   "dependencies": {
     "antd": "^5.19.3",
+    "gh-pages": "^6.1.1",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
