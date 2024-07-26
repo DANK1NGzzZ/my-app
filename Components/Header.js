@@ -36,37 +36,32 @@ const Header = () => {
     ];
     //#DB2A6B"
     return (
-        <div style={{ display: "flex", height: '100px' }}>
-            <div style={{ flex: "2", display: "flex", justifyContent: 'center', alignItems: 'center' }}>
-                <Link href="./" style={{ textAlign: 'center', display: 'flex', alignItems: 'center' }}>
-                    <h1 className="absolute left-0" style={{ flex: "1", left: '20px', fontSize: '40px', fontWeight: 'bold', textAlign: 'center' }}>
-                        <span style={{ color: '#DB2A6B' }}>Gath</span>Session<span style={{ color: '#DB2A6B' }}>.</span>
-                    </h1>
-                </Link>
-            </div>
-           <div style={{ flex:"1"}}></div>
-
-            <div style={{ display: "flex", flex: "2", alignItems: 'center' }}>
-                <Link href="./" style={{ fontSize: '18px', flex: "1",textAlign:"center" }}>Home</Link>
-                <Link href="./features" style={{ fontSize: '18px', flex: "1",textAlign:"center" }}>Features</Link>
-                <Link href="./blog" style={{ fontSize: '18px', flex: "1" ,textAlign:"center"}}>Blog</Link>
-                <Link href="./contact" style={{ fontSize: '18px', flex: "1" ,textAlign:"center"}}>Contact</Link>
-                <Link href="./aboutUs" style={{ fontSize: '18px', flex: "1" ,textAlign:"center"}}>About us</Link>
-            </div>
-
-        <div style={{ display: "flex", flex: "2", alignItems: 'center', alignItems: 'center', justifyContent: 'flex-end' }}>
-        <Dropdown menu={{ items }} style={{ flex: "1" }}>
-                    <Space>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mx-8">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M8.25 12h12.25M12 17.25h8.25" />
-                        </svg>
-                    </Space>
-
-                </Dropdown>
+        <div className="flex h-20">
+        <div className="flex-2 flex justify-center items-center">
+            <a href="./" className="text-center flex items-center">
+                <h1 className="absolute left-0 flex-1 left-20 text-4xl font-bold">
+                    <span className="text-pink-600">Gath</span>Session<span className="text-pink-600">.</span>
+                </h1>
+            </a>
         </div>
-
+        <div className="flex-1"></div>
+        <div className="flex flex-2 items-center">
+            <a href="./" className="text-lg flex-1 text-center">Home</a>
+            <a href="./features" className="text-lg flex-1 text-center">Features</a>
+            <a href="./blog" className="text-lg flex-1 text-center">Blog</a>
+            <a href="./contact" className="text-lg flex-1 text-center">Contact</a>
+            <a href="./aboutUs" className="text-lg flex-1 text-center">About us</a>
         </div>
-
+        <div className="flex flex-2 items-center justify-end">
+            <div className="relative">
+                {/* Assume Dropdown component handles styling */}
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="h-6 w-6 mx-8">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M8.25 12h12.25M12 17.25h8.25" />
+                </svg>
+            </div>
+        </div>
+    </div>
+    
     )
 }
 
